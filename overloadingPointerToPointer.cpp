@@ -6,7 +6,6 @@ class test{
         int num;
         test(int j){ num = j; }
         test *operator->(void){
-
             return this;
         }
     };
@@ -16,6 +15,7 @@ int main(){
     test *ptr = &T;
     cout<<"T.num = "<<T.num<<endl;
     cout<<"ptr->num = "<<ptr->num<<endl;
+    cout<<"(*ptr).num  = "<<(*ptr).num<<endl;
     cout<<"T->num = "<<T->num<<endl;
     return 0;
 }
