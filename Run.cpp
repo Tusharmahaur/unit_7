@@ -18,11 +18,11 @@ class demo
         data++;
             }
             
-    demo & operator = (demo &t){
+    demo & operator = (demo &t)
+    {
         t.data = data;
         return t;
             }
-    
 };
 
 int main(){
